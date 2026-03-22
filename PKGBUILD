@@ -1,14 +1,14 @@
 # Maintainer: Torben Gustke <torben@example.com>
-pkgname=gnome-shell-extension-workspace-multi-monitor-quick-toggle
+pkgname=gnome-shell-extension-monitor-workspaces-toggle
 pkgver=1
 pkgrel=1
-pkgdesc="GNOME Shell quick settings toggle to switch workspaces between primary display only and all displays"
+pkgdesc=GNOME shell extension that adds a quick settings toggle to switch workspaces between 'Primary display only' and 'All displays'.
 arch=('any')
 url="https://github.com/torben/gnome-shell-extension-workspace-multi-monitor-quick-toggle"
-license=('GPL-3.0-or-later')
+license=('WTFPL')
 depends=('gnome-shell>=45')
 
-_uuid="workspace-multi-monitor-quick-toggle@gnome-shell-extensions"
+_uuid="gnome-shell-extension-monitor-workspaces-toggle@t0rbn"
 
 build() {
     : # nothing to compile
