@@ -1,0 +1,8 @@
+{
+    "uuid": "gnome-shell-extension-monitor-workspaces-toggle@t0rbn",
+    "name": "Monitor Workspaces Toggle",
+    "description": "Adds a quick settings toggle to switch workspaces between 'Primary display only' and 'All displays'.",
+    "shell-version": ["49", "50"],
+    "version": 1,
+    "url": "https://github.com/t0rbn/gnome-shell-extension-monitor-workspaces-toggle"
+}
