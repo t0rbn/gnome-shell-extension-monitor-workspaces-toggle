@@ -1,5 +1,5 @@
 pkgname=gnome-shell-extension-monitor-workspaces-toggle
-pkgver=2
+pkgver=3
 pkgrel=1
 pkgdesc=GNOME shell extension that adds a quick settings toggle to switch workspaces between 'Primary display only' and 'All displays'.
 arch=('any')

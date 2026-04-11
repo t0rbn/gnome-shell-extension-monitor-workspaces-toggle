@@ -8,8 +8,8 @@ const WorkspaceDisplayToggle = GObject.registerClass(
     class WorkspaceDisplayToggle extends QuickSettings.QuickToggle {
         _init() {
             super._init({
-                title: 'All Displays',
-                subtitle: 'Workspaces',
+                title: 'Workspaces',
+                subtitle: 'All Displays',
                 iconName: 'preferences-desktop-display-symbolic',
                 toggleMode: true,
             });
@@ -32,7 +32,7 @@ const WorkspaceDisplayToggle = GObject.registerClass(
             const primaryOnly = this._mutterSettings.get_boolean('workspaces-only-on-primary');
             // Prevent feedback loop: only update if the value actually changed
             const desired = !primaryOnly;
-            this.title = primaryOnly ? 'Primary Only' : 'All Displays';
+            this.subtitle = primaryOnly ? 'Primary Only' : 'All Displays';
             if (this.checked !== desired)
                 this.checked = desired;
         }
