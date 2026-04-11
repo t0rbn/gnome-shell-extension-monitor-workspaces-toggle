@@ -32,6 +32,7 @@ const WorkspaceDisplayToggle = GObject.registerClass(
             const primaryOnly = this._mutterSettings.get_boolean('workspaces-only-on-primary');
             // Prevent feedback loop: only update if the value actually changed
             const desired = !primaryOnly;
+            this.title = primaryOnly ? 'Primary Only' : 'All Displays';
             if (this.checked !== desired)
                 this.checked = desired;
         }
