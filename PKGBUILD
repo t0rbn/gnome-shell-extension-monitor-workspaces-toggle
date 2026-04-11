@@ -1,6 +1,5 @@
-# Maintainer: Torben Gustke <torben@example.com>
 pkgname=gnome-shell-extension-monitor-workspaces-toggle
-pkgver=1
+pkgver=2
 pkgrel=1
 pkgdesc=GNOME shell extension that adds a quick settings toggle to switch workspaces between 'Primary display only' and 'All displays'.
 arch=('any')
@@ -18,5 +17,5 @@ package() {
     local extdir="${pkgdir}/usr/share/gnome-shell/extensions/${_uuid}"
     install -dm755 "${extdir}"
     install -m644 "${startdir}/metadata.json" "${extdir}/metadata.json"
-    install -m644 "${startdir}/extension.js"  "${extdir}/extension.js"
+    install -m644 "${startdir}/src/extension.js"  "${extdir}/extension.js"
 }
